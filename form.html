@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Stay in the game with the latest University of South Carolina athletics updates! Explore Gamecocks football, basketball, and more.">
+        <meta name="keywords" content="South Carolina, Athletics, JavaScript">
+        <meta name="author" content="Caleb Lanier">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GoGamecocks! - Home Page</title>
+
+    </head>
+    <body>
+        <header>
+            <nav>
+                <h3><img src="Figma UI/Gamecock.PNG" alt="Gamecock Logo">GoGamecocks</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sport1.html">Football</a></li>
+                    <li><a href="sport2.html">Mens' Basketball</a></li>
+                    <li><a href="sport3.html">Womens' Basketball</a></li>
+                    <li><a href="form.html">Support</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <h2>Membership Details</h2>
+                <p>If you want to support South Carolina athletics through GoGamecocks, there are 2 ways. The first is a membership of which the options are shown below. The second is a custom recurring or one time payment which allows for users to select how much they want to give and how often. The custom payment method does not come with the membership benefits.</p>
+                <table>
+                    <tr>
+                      <th>Silver $1,000</th>
+                      <th>Gold $2,000</th>
+                    </tr>
+                        <td>
+                            <ul>
+                                <li>Access to exclusive behind-the-scenes content.</li>
+                                <li>Quarterly digital newsletters with player interviews and team updates.</li>
+                                <li>Limited edition South Carolina Athletics NiL program merchandise.</li>
+                                <li>Priority access to purchase single-game tickets.</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Everything in Silver Level, plus:</li>
+                                <li>Monthly virtual meet-and-greet sessions with athletes and coaches.</li>
+                                <li>Exclusive early access to new merchandise releases.</li>
+                                <li>Name featured on the NiL program supporter's wall at the stadium.</li>
+                                <li>10% discount on official team merchandise.</li>
+                            </ul>
+                        </td>
+                    <tr>
+                      <th>Diamond $2,500</th>
+                      <th>Gamecock $3,250</th>
+                    </tr>
+                        <td>
+                            <ul>
+                                <li>Everything in Gold Level, plus:</li>
+                                <li>Two complimentary tickets to a select home game.</li>
+                                <li>VIP access to pre-game warm-ups and post-game press conferences.</li>
+                                <li>Personalized shout-out during home games.</li>
+                                <li>Invitation to an annual VIP appreciation event with players and coaching staff.</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Everything in Diamond Level, plus:</li>
+                                <li>Customized South Carolina Athletics NiL jersey with your name.</li>
+                                <li>Private dinner with select athletes and coaching staff.</li>
+                                <li>Exclusive invitation to away game watch parties with special guests.</li>
+                                <li>Recognition as a Platinum Elite supporter in all official communications and on the team website.</li>
+                            </ul>
+                        </td>
+                  </table>
+            </section>
+            <section>
+                <h2>Payment Information</h2>
+                <form method="POST" action="">
+                    <p>
+                       <fieldset>
+                          <legend>Payment Details:</legend>
+                          <input type="radio" name="payment_frequency" value="Once" id="once">
+                          <label for="once">Once</label>
+                          <input type="radio" name="payment_frequency" value="Recurring" id="recurring" checked>
+                          <label for="recurring">Recurring</label>
+                    <p>
+                        <label for="paymentamount">Payment Amount:</label>
+                        <input type="text" id="payment" name="paymentamount">
+                    </p>
+                    <p>
+                          <label for="membership">Membership:</label>
+                          <select name="membership" id="membership">
+                          <option value="Silver">Silver</option>
+                          <option value="Gold">Gold</option>
+                          <option value="Diamond">Diamond</option>
+                          <option value="Gamecock">Gamecock</option>
+                          </select>
+                       </fieldset>
+                    </p>
+                    <p>
+                        <fieldset>
+                            <legend>Card Information:</legend>
+                            <p>
+                                <label for="name">Name:</label>
+                                <input type="text" id="cardowner" name="name">
+                            </p>
+                            <p>
+                                <label for="cardnumber">Card Number:</label>
+                                <input type="text" id="card#" name="cardnumber">
+                            </p>
+                            <p>
+                                <label for="securitycode">Security Code:</label>
+                                <input type="text" id="cardcode" name="securitycode">
+                            </p>
+                            <p>
+                                <label for="expirationdate">Expiration Date:</label>
+                                <input type="text" id="cardexpiration" name="expirationdate">
+                            </p>
+                        </fieldset>
+                    </p>
+                    <input type="submit" value="Submit">
+                 </form>
+            </section>
+        </main>
+        <footer>
+        
+        </footer>
+    </body>
+</html>
