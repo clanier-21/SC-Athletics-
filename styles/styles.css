@@ -1,0 +1,85 @@
+/*Entire webpage color, text color, font style and general text spacing*/
+* {
+    background-color: black;
+}
+
+body {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    line-height: 1.5;
+}
+
+/*Makes the list appear w/o bullets, makes padding & margin 0 in addition makes the nav bar black*/ 
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*Positions the logo in the top left*/
+#logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/*Makes the Nav appear in a line without the bullet and positions the text beside the logo*/
+nav h3 {
+    padding-left: 80px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+/*Makes the hyperlink appear in a line, bolds the text, centers and effects the spacing around each link*/
+a {  
+    display: inline-block;
+    text-align: center;
+    color: white;
+    padding: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/*Changes the link color when hovered*/
+a:hover {
+    background-color: #73000A;
+    color: white;
+}
+
+/*Creates the box for the items in the article*/
+main article {
+    display: flex;
+}
+
+/*Creates a garnet border around the divs and centers them as well as creating equal space between each item*/
+main article div {
+    border: solid 3px #73000A;
+    margin-right: 1rem;
+    margin: auto;
+    align-content: center;
+}
+
+/*Centers text for the article section*/
+article h2 {
+    text-align: center;
+}
+
+/* centers the text for the divs and creates a border to position the text farther above the image*/
+main article div h3 {
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+    margin-top: 0;
+}
+
+/*Makes equal space between each image, sets height and width, changes the image background color*/
+img.highlight-players {
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    display: block;
+    margin: auto;
+}
