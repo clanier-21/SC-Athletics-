@@ -1,14 +1,11 @@
 /*Entire webpage color, text color, font style and general text spacing*/
-* {
-    background-color: black;
-}
-
 body {
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
     margin: 0;
     line-height: 1.5;
+    background-color: black;
 }
 
 /*Makes the list appear w/o bullets, makes padding & margin 0 in addition makes the nav bar black*/ 
@@ -66,6 +63,7 @@ main article div {
 /*Centers text for the article section*/
 article h2 {
     text-align: center;
+
 }
 
 /* centers the text for the divs and creates a border to position the text farther above the image*/
@@ -82,4 +80,10 @@ img.highlight-players {
     background-color: white;
     display: block;
     margin: auto;
+}
+
+main section {
+    background-color: #73000A;
+    color: whitesmoke;
+    padding: 5px 0px 5px 0px;
 }
