@@ -1,4 +1,8 @@
 /*Entire webpage color, text color, font style and general text spacing*/
+* {
+    box-sizing: border-box;
+}
+
 body {
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -13,6 +17,9 @@ nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    position: absolute;
+    top: 5px;
+    right: 95rem;
 }
 
 /*Positions the logo in the top left*/
@@ -52,6 +59,14 @@ main article {
     display: flex;
 }
 
+.mainsection {
+    text-align: center;
+    margin: 4rem;
+}
+
+.mainsection img {
+    border: solid 5 px whitesmoke;
+}
 /*Creates a garnet border around the divs and centers them as well as creating equal space between each item*/
 main article div {
     border: solid 3px #73000A;
@@ -61,13 +76,17 @@ main article div {
 }
 
 /*Centers text for the article section*/
-article h2 {
+main article h2 {
     text-align: center;
-
+    margin: 2rem;
 }
 
+.HighlightHeading {
+    text-align: center;
+    margin: 2rem;
+}
 /* centers the text for the divs and creates a border to position the text farther above the image*/
-main article div h3 {
+main article div h3,p {
     text-align: center;
     border-radius: 10px 10px 0 0;
     margin-top: 0;
@@ -75,15 +94,81 @@ main article div h3 {
 
 /*Makes equal space between each image, sets height and width, changes the image background color*/
 img.highlight-players {
-    width: 200px;
-    height: 200px;
     background-color: white;
     display: block;
     margin: auto;
 }
 
-main section {
+.support {
     background-color: #73000A;
     color: whitesmoke;
-    padding: 5px 0px 5px 0px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+
+/*Football Page*/
+#footballmain {
+    margin-left: 10rem;
+    display: flex;
+    align-items: flex-start;
+    margin-top: 4rem;
+    align-content: center;
+}
+
+.mainpic img {
+    max-width: 100%;
+    height: auto;
+}
+
+.videos {
+    margin-left: 25rem;
+}
+
+.videos iframe {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8rem;
+}
+
+.roster{
+    margin-top: 6rem;
+    text-align: center;
+}
+/*Form Page*/
+
+
+
+/*Footer details*/
+footer {
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+
+.socialicons {
+    display: flex;
+    justify-content: center;
+}
+
+.socialicons a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: #73000A;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.socialicons a:hover i {
+    background-color: #111;
+    transition: 0.5s;
+}
+
+.socialicons a i {
+    font-size: 2em;
+    color: white
+}
+
+.footerbottom {
+    text-align: center;
+    padding: 20px;
 }

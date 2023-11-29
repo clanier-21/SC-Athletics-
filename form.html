@@ -17,12 +17,39 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>GoGamecocks! - Home Page</title>
         <link href="styles/styles.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            td {
+            border: 1px solid whitesmoke;
+            justify-content: center;          
+            }
 
+            .mainsection p {
+                margin-bottom: 4rem;
+                text-align: left;
+            }
+
+            .mainsection div {
+                background-color: #73000A;
+                padding: .5rem;
+            }
+            
+            table {
+                margin-top: 2rem;
+                text-align: center;
+            }
+
+            .bottomsection {
+                margin-left: 2rem;
+                margin-right: 2rem;
+            }
+
+        </style>
     </head>
     <body>
         <header>
             <nav>
-                <h3><img id="logo" src="imgs/Gamecock.PNG" width="80" height="80" alt="Gamecock Logo">GoGamecocks</h3>
+                <h3><img id="logo" src="imgs/Gamecock.PNG" width="80" height="80" alt="Gamecock Logo">GoGamecocks!</h3>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="sport1.html">Football</a></li>
@@ -33,9 +60,11 @@
             </nav>
         </header>
         <main>
-            <section>
+            <section class="mainsection">
+                <div>
                 <h2>Membership Details</h2>
                 <p>If you want to support South Carolina athletics through GoGamecocks, there are 2 ways. The first is a membership of which the options are shown below. The second is a custom recurring or one time payment which allows for users to select how much they want to give and how often. The custom payment method does not come with the membership benefits.</p>
+                </div>
                 <table>
                     <tr>
                       <th>Silver $1,000</th>
@@ -81,8 +110,8 @@
                             </ul>
                         </td>
                   </table>
-            </section>
-            <section>
+                </section>
+            <section class="bottomsection">
                 <h2>Payment Information</h2>
                 <form method="POST" action="">
                     <p>
@@ -133,7 +162,15 @@
             </section>
         </main>
         <footer>
-        
+            <div class="socialicons">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+            </div>
+            <div class="footerbottom">
+                <p>Copyright &copy;2023; University of South Carolina</p>
+            </div>
         </footer>
     </body>
 </html>
